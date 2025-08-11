@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Sudoku Solver</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Sudoku Solver</h1>
+      <p class="tagline">Solve any Sudoku puzzle with ease — powered by Python and Flask</p>
+    </header>
+
+    <section id="sudoku-grid" aria-label="Sudoku Board"></section>
+
+    <div class="button-group">
+      <button class="btn btn-solve" onclick="solveSudoku()">Solve</button>
+      <button class="btn btn-clear" onclick="clearGrid()">Clear</button>
+      <button class="btn btn-sample" onclick="loadSamplePuzzle()">Load Sample Puzzle</button>
+    </div>
+
+    <footer>
+      <p>Made with ❤️ using Flask, Python & JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
